@@ -3,8 +3,7 @@
 ## Question and Answers
 
 1. What did you learn after looking on our dataset?
-##
-The dataset consists of set of images from a parking garage taken from different cameras at different time of the day. The pictures seem to be taken at a resolution of 1080p (1920x1080), although the pictures from the camera c10 have been downsized to 640x480 (except for one). There is a mismatch of resolution among the images. This makes some form of pre processing necessary to be able to work with this dataset.
+-> The dataset consists of set of images from a parking garage taken from different cameras at different time of the day. The pictures seem to be taken at a resolution of 1080p (1920x1080), although the pictures from the camera c10 have been downsized to 640x480 (except for one). There is a mismatch of resolution among the images. This makes some form of pre processing necessary to be able to work with this dataset.
 
 4. How does you program work?\ We firstly start with some data preparation - ensuring that all images have same size and deleting some corrupted file. Inside a for loop, we start with the 1st image as a refernce image and compare the next image wth this reference image using the given function. The output 'thresh' which contains the difference between the two images in the form of a map with values 255 and 0 is used. We compute a percentage of difference between the two images and if the percentage is less than a threshold that can be provided as an argument, we delete this image and move onto the next one with the same refernce image. IF there is a significant difference bewteen the images, we keep the image and change the reference image to this new file and continue the process.
 
