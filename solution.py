@@ -57,7 +57,7 @@ def data_cleanup(path, threshold):
 def main():
 
     path = '/home/rushabh/Interview/Kopernikus/dataset-candidates-ml_2/dataset'
-    threshold = 20
+    threshold = 10
 
     data_cleanup(path, threshold)
 
